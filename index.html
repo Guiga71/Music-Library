@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Library</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+        <aside class="sidebar">
+            <div class="profile">
+                <img 
+                    class="profile_avatar" 
+                    src="./images/Eu.jpg" 
+                    alt="Foto do usuário" 
+                />
+                <div class="profile_info">
+                    <h1 class="profile_name">Guilherme Cardozo</h1>
+                    <a href="#" class="profile_link"
+                        >Edit profile <i class="fas fa-cog"></i>
+                    </a>
+                </div>
+            </div>
+            <nav class="nav">
+                <ul class="nav-lists">
+                   <li class="nav-item">
+                       <a href="#" class="nav_link nav_link-active">
+                           <i class="fas fa-home"></i> Overview
+                       </a>
+                    </li>
+                   <li class="nav-item">
+                       <a href="#" class="nav_link nav_link-active">
+                            <i class="fas fa-newspaper"></i> News
+                   </a>
+                    </li>
+                   <li class="nav-item">
+                       <a href="#" class="nav_link nav_link-active">
+                            <i class="fas fa-music"></i> Playlists
+                   </a>
+                    </li>
+                   <li class="nav-item">
+                        <a href="#" class="nav_link nav_link-active">
+                            <i class="fas fa-podcast"></i> Discover
+                   </a>
+                    </li>
+                </ul>
+
+                <ul class="nav_lists">
+                    <li class="nav-item">
+                        <a href="#" class="nav_link">
+                            <i class="fas fa-sliders-h"></i>Dashboard
+                    </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav_link">
+                        <i class="far fa-comment"></i> Messages
+                    </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav_link">
+                        <i class="far fa-bell"></i> Notifications
+                    </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav_link">
+                        <i class="far fa-user"></i> Account
+                    </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <main>
+            <section class="form">
+                <button class="menu" type="button" aria-label="menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <i class="fas fa-search"></i>
+                <input 
+                    type="text" 
+                    name="pesquisa"
+                    class="form_search"
+                    placeholder="Search artists, playlists or tracks"
+                />
+            </section>
+            <div class="container">
+                <section class="playlists">
+                    <h2>Featured Playlists</h2>
+                    <ul class="playlists_lists">
+                        <li class="playlists_items">
+                            <img src="./images/playlist1.jpg" alt="Playlist 1">
+                            <h3>Only Stardust</h3>
+                            <p>24 tracks</p>
+                        </li>
+                        <li class="playlists_items">
+                            <img src="./images/playlist2.jpg" alt="Playlist 2">
+                            <h3>Mike Vella</h3>
+                            <p>12 tracks</p>
+                        </li>
+                        <li class="playlists_items">
+                            <img src="./images/playlist3.jpg" alt="Playlist 3">
+                            <h3>the best singles s2</h3>
+                            <p>162 tracks</p>
+                        </li>
+                        <li class="playlists_items">
+                            <img src="./images/playlist4.jpg" alt="Playlist 4">
+                            <h3>Indie</h3>
+                            <p>140 tracks</p>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="profile-views">
+                    <h2>Profile Views</h2>
+                    <ul class="profile-views_lists">
+                        <li class="profile-views_items">
+                            <div class="profile-views_info">
+                                <img src="./images/view1.jpg" alt="Profile 1">
+                                <div class="profile-views_description">
+                                    <h4>Jenny Villa</h4>
+                                    <p>1 day ago</p>
+                                </div>
+                            </div>
+                            <p>4 albums</p>
+                        </li>
+                        <li class="profile-views_items">
+                            <div class="profile-views_info">
+                                <img src="./images/view2.jpg" alt="profile 2">
+                                <div class="profile-views_description">
+                                    <h4>Aquila</h4>
+                                    <p>3 days ago</p>
+                                </div>
+                            </div>
+                            <p>2 albums</p>
+                        </li>
+                        <li class="profile-views_items">
+                            <div class="profile-views_info">
+                                <img src="./images/view3.jpg" alt="profile 3">
+                                <div class="profile-views_description">
+                                    <h4>This is War</h4>
+                                    <p>2 weeks ago</p>
+                                </div>
+                            </div>
+                            <p>5 albums</p>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="tracks">
+                    <h2>Tracks</h2>
+                    <ul class="tracks_lists">
+                        <li class="tracks_items">
+                            <img src="./images/track1.jpg" alt="Track 1">
+                            <h4>Mahara Bon</h4>
+                            <p>Sexy in Paris</p>
+                        </li>
+                        <li class="tracks_items">
+                            <img src="./images/track2.jpg" alt="Track 2">
+                            <h4>Donna</h4>
+                            <p>Pseudo-life</p>
+                        </li>
+                        <li class="tracks_items">
+                            <img src="./images/track3.jpg" alt="Track 3">
+                            <h4>Avven</h4>
+                            <p>Magic</p>
+                        </li>
+                        <li class="tracks_items">
+                            <img src="./images/track4.jpg" alt="Track 4">
+                            <h4>Cony Matt</h4>
+                            <p>Living hell</p>
+                        </li>
+                        <li class="tracks_items">
+                            <img src="./images/track5.jpg" alt="Track 5">
+                            <h4>Claudia Cany</h4>
+                            <p>Remember</p>
+                        </li>
+                        <li class="tracks_items">
+                            <img src="./images/track6.jpg" alt="Track 6">
+                            <h4>Samn</h4>
+                            <p>Same - Huly</p>
+                        </li>
+                        <li class="tracks_items">
+                            <img src="./images/track7.jpg" alt="Track 7">
+                            <h4>Pacify</h4>
+                            <p>Portrait</p>
+                        </li>
+                    </ul>
+                </section>
+        </main>
+                
+        <script src="main.js"></script>
+    </body>
+</html>
